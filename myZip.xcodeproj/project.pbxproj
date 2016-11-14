@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8A0CEA711DD8E022001E1AA6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CEA701DD8E022001E1AA6 /* main.cpp */; };
+		8A0CEA7A1DD8E66C001E1AA6 /* Huffman.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CEA781DD8E66C001E1AA6 /* Huffman.cpp */; };
+		8A0CEA7D1DD8E938001E1AA6 /* MyZip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CEA7B1DD8E938001E1AA6 /* MyZip.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		8A0CEA6D1DD8E022001E1AA6 /* myZip */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = myZip; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0CEA701DD8E022001E1AA6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8A0CEA771DD8E2A7001E1AA6 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		8A0CEA781DD8E66C001E1AA6 /* Huffman.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Huffman.cpp; sourceTree = "<group>"; };
+		8A0CEA791DD8E66C001E1AA6 /* Huffman.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Huffman.hpp; sourceTree = "<group>"; };
+		8A0CEA7B1DD8E938001E1AA6 /* MyZip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyZip.cpp; sourceTree = "<group>"; };
+		8A0CEA7C1DD8E938001E1AA6 /* MyZip.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyZip.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				8A0CEA701DD8E022001E1AA6 /* main.cpp */,
+				8A0CEA771DD8E2A7001E1AA6 /* test.txt */,
+				8A0CEA781DD8E66C001E1AA6 /* Huffman.cpp */,
+				8A0CEA791DD8E66C001E1AA6 /* Huffman.hpp */,
+				8A0CEA7B1DD8E938001E1AA6 /* MyZip.cpp */,
+				8A0CEA7C1DD8E938001E1AA6 /* MyZip.hpp */,
 			);
 			path = myZip;
 			sourceTree = "<group>";
@@ -118,7 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A0CEA7D1DD8E938001E1AA6 /* MyZip.cpp in Sources */,
 				8A0CEA711DD8E022001E1AA6 /* main.cpp in Sources */,
+				8A0CEA7A1DD8E66C001E1AA6 /* Huffman.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

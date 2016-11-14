@@ -1,0 +1,47 @@
+Got it!
+
+This website uses cookies to ensure you get the best experience on our website More info
+Cookie Consent plugin for the EU cookie law
+djangorocks.com
+
+    Home
+    Snippets
+    Tutorials
+    Recommended Reading
+    About
+    Cookie Policy
+
+How to create a basic blog in Django » Starting your application
+
+Navigate to your project directory, this should contain a __init__.py, manage.py, settings.py and urls.py. There may also be a few others. For reference, my project name is djangorocks, you will need to replace any references to djangorocks throughout this tutorial.
+
+Type the following into terminal, this creates a new application folder & key files we will be using for our blog.
+
+python manage.py startapp blog
+
+You should now have a folder called blog containing 3 files: __init__.py, models.py and views.py.
+
+Important
+
+Open up your settings.py, this is located in your project folder. Find INSTALLED_APPS and add 'blog'. You should have something similar to the following;
+
+INSTALLED_APPS = (
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.sites',
+    'djangorocks.blog',
+)
+
+Django now knows about your new application, all thats left to do is create it.
+How to create a basic blog in Django
+
+    Starting your application
+    Defining your models
+    Configuring the automatic admin
+    Writing the views & Defining your URL's
+    Writing the templates
+
+This site is in no way affiliated with Django or the Django Software Foundation. Linode   Powered by FeedBurner
+
+© DjangoRocks.com 2009 - 2016
