@@ -12,9 +12,17 @@
 #include <vector>
 //#include <bitset>
 #include "MyZip.hpp"
+/**
+ 1.Read files by ASCII, transfer it to integer,then count the frequency of each integer,encoding file with Huffman Tree
+ 2. save the encoding code as binary file,and save the whole huffman Tree too
+ 3. decoding using file with hash table create by hufman Tree key point : greedy algorithm
+ **/
+
+
 
 int main(int argc, const char * argv[]) {
     std::cout << "please input the compress file name !\n";
+    // if the file name is not exist, system will break down
     std::string fileNmae;
     std::cin>>fileNmae;
     std::ifstream file(fileNmae);

@@ -9,6 +9,12 @@
 #include "Huffman.hpp"
 
 
+/**
+    one to one relatinship 
+    is there any data structure support key(value) - key (value) searching?
+ 
+ **/
+
 void Huffman::buildMap(Node *root,std::string tmp){
     if (root->left == NULL){
         encodingMap[root->val] = tmp;
@@ -23,6 +29,11 @@ void Huffman::buildMap(Node *root,std::string tmp){
 bool cmp(Node *a,Node *b){
     return a->cnt > b->cnt;
 }
+
+/**
+    iniitalizing Huffman Tree
+    The way to build Huffman Tree is using priority Tree in there
+ **/
 
 Huffman::Huffman(std::vector<int> &ve){
     std::priority_queue<Node*,std::vector<Node*>,decltype(&cmp)> qu(&cmp);
@@ -65,7 +76,10 @@ std::string Huffman::encoding(std::vector<int> &ve){
 
 
 
-
+/**
+ greedy to break binary stream, create a new one untill we can't find any match from our map
+ bug!!! always get a extra 0 ??? why
+ **/
 
 std::vector<int> Huffman:: decoding(std::string s){
     std::vector<int> re;
